@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Input Types </title>
+</head>
+<body>
+    <form action="submitfile.html">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password</label>
+        <input type="password" name="pwd" id="pwd"><br><br>
+        <label for="favcolor">Select your favourite color</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-01"><br><br>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax"  max="1980-01-01"><br><br>
+        <label for="birthdaytime">Birthday(date and time):</label>
+        <input type="datetime-local" name="birthdaytime" id="birthdaytime"><br>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <label for="bdymonth">Birthday(month and year):</label>
+        <input type="month" id="bdymonth" name="bdymonth"><br>
+        <label for="gsearch">Search google:</label>
+        <input type="search" id="gsearch" name="gsearch"><br>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+        <label for="homepage">Add your home page:</label>
+        <input type="url" id="homepage" name="homepage"><br>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"><br><br>
+        <input type="hidden" id="custid" name="custid" value="3487">
+        <input type="submit">
+        <input type="reset">
+</form>
+</body>    
+</html>
